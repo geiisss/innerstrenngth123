@@ -2,6 +2,9 @@ import React from "react";
 import anxiety from "../assets/anxiety.png";
 import bipolar from "../assets/bipolar.png";
 import depression from "../assets/depression.png";
+import anxiety2 from "../assets/anxiety.gif";
+import bipolar2 from "../assets/bipolar.gif";
+import depression2 from "../assets/depression.gif";
 import { Link } from "react-router-dom";
 
 const Layanan = () => {

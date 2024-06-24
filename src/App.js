@@ -10,20 +10,30 @@ import LoginTerapis from './data/LoginTerapis.jsx';
 import SignUp from './components/SignUp.jsx';
 import DaftarTerapis from './data/DaftarTerapis.jsx';
 import Pageone from './pages/Tentang Kami/Pageone.jsx';
-import Konsultasi from './pages/Konsultasi.jsx';
 import Komunitas from './pages/Komunitas.jsx';
 import Layout from './components/shared/Layout.jsx';
 import Dashboard from './components/shared/Dashboard.jsx';
 import Pasien from './components/shared/Pasien.jsx';
+import PasienOnline from './components/shared/PasienOnline.jsx';
+import PasienOffline from './components/shared/PasienOffline.jsx';
 import JanjiTemu from './components/shared/JanjiTemu.jsx';
+import JanjiOnline from './components/shared/JanjiOnline.jsx';
+import JanjiOffline from './components/shared/JanjiOffline.jsx';
 import Pesan from './components/shared/Pesan.jsx';
 import Jadwal from './components/shared/Jadwal.jsx';
 import TransitionChart from './components/shared/TransactionChart.jsx';
 import BuyerProfileChart from './components/shared/BuyerProfileChart.jsx';
 import IsiPesan from './components/shared/IsiPesan.jsx';
+// Bagian Setelah Login
 import LandingpageLogin from './pageslogin/LandingpageLogin.jsx';
-import Profile from './pageslogin/Profile.jsx';
 import Notifikasi from './data/Notifikasi.jsx';
+import ProfileDash from './components/shared/ProfileDash.jsx';
+import Notifications from './components/shared/Notifications.jsx';
+import TentangkamiLogin from './pageslogin/TentangkamiLogin.jsx';
+import Consultation from './pages/konsultasi/Consultation.jsx';
+import Konsultasi from './pages/konsultasi/Konsultasi.jsx';
+import KonsultasiLogin from './pageslogin/KonsultasiLogin.jsx';
+import MyProfile from './pageslogin/MyProfile.jsx';
 import Rekomen1 from './pagesrekomendasi/Rekomen1.jsx';
 import Rekomen2 from './pagesrekomendasi/Rekomen2.jsx';
 import Rekomen3 from './pagesrekomendasi/Rekomen3.jsx';
@@ -37,7 +47,6 @@ import Rekomen11 from './pagesrekomendasi/Rekomen11.jsx';
 import Rekomen12 from './pagesrekomendasi/Rekomen12.jsx';
 import KomunitasLogin from './pageslogin/KomunitasLogin.jsx';
 import KomunitasAnda from './pageslogin/KomunitasAnda.jsx';
-import PageoneLogin from './pageslogin/PageoneLogin.jsx';
 import KomunitasSalingjaga from './components/shared/KomunitasSalingjaga.jsx';
 import KomunitasMentarisehat from './components/shared/KomunitasMentarisehat.jsx';
 import KomunitasPikiransejahtera from './components/shared/KomunitasPikiransejahtera.jsx';
@@ -62,7 +71,10 @@ import Postingan3 from './pages/postingan3.jsx';
 import Postingan4 from './pages/postingan4.jsx';
 import Postingan5 from './pages/postingan5.jsx';
 import Postingan6 from './pages/postingan6.jsx';
-
+import Artikel1 from './pages/artikel1.jsx';
+import Artikel2 from './pages/artikel2.jsx';
+import Artikel3 from './pages/artikel3.jsx';
+import Artikel4 from './pages/artikel4.jsx';
 
 const App = () => {
   return (
@@ -85,14 +97,24 @@ const App = () => {
           <Route path="/Layout" element={<Layout />} />
           <Route path="/Dashboard" element={<Dashboard />} />
           <Route path="/Pasien" element={<Pasien />} />
+          <Route path="/PasienOnline" element={<PasienOnline />} />
+          <Route path="/PasienOffline" element={<PasienOffline />} />
           <Route path="/Pesan" element={<Pesan />} />
           <Route path="/JanjiTemu" element={<JanjiTemu />} />
+          <Route path="/JanjiOnline" element={<JanjiOnline />} />
+          <Route path="/JanjiOffline" element={<JanjiOffline />} />
           <Route path="/Jadwal" element={<Jadwal />} />
           <Route path="/TransitionChart" element={<TransitionChart />} />
           <Route path="/BuyerProfileChart" element={<BuyerProfileChart />} />
           <Route path="/IsiPesan" element={<IsiPesan />} />
-          <Route path="/Profile" element={<Profile />} />
+          <Route path="/ProfileDash" element={<ProfileDash />} />
+          <Route path="/Notifications" element={<Notifications />} />
+          {/* Bagian Setelah Login */}
           <Route path="/Notifikasi" element={<Notifikasi />} />
+          <Route path='/KonsultasiLogin' element={<KonsultasiLogin />} />
+          <Route path='/Consultation' element={<Consultation />} />
+          <Route path="/TentangkamiLogin" element={<TentangkamiLogin />} />
+          <Route path="/MyProfile" element={<MyProfile />} />
           <Route path="/Rekomen1" element={<Rekomen1 />} />
           <Route path="/Rekomen2" element={<Rekomen2 />} />
           <Route path="/Rekomen3" element={<Rekomen3 />} />
@@ -106,7 +128,6 @@ const App = () => {
           <Route path="/Rekomen12" element={<Rekomen12 />} />
           <Route path="/KomunitasLogin" element={<KomunitasLogin />} />
           <Route path="/KomunitasAnda" element={<KomunitasAnda />} />
-          <Route path="/PageoneLogin" element={<PageoneLogin />} />
           <Route path="/KomunitasSalingJaga" element={<KomunitasSalingjaga />} />
           <Route path="/KomunitasPikiransejahtera" element={<KomunitasPikiransejahtera />} />
           <Route path="/KomunitasMentarisehat" element={<KomunitasMentarisehat />} />
@@ -130,9 +151,11 @@ const App = () => {
           <Route path="/Postingan4" element={<Postingan4 />} />
           <Route path="/Postingan5" element={<Postingan5 />} />
           <Route path="/Postingan6" element={<Postingan6 />} />
+          <Route path="/Artikel1" element={<Artikel1 />} />
+          <Route path="/Artikel2" element={<Artikel2 />} />
+          <Route path="/Artikel3" element={<Artikel3 />} />
+          <Route path="/Artikel4" element={<Artikel4 />} />
           <Route path="/Postinganmu" element={<Postinganmu />} />
-
-
           </Routes>
       </BrowserRouter>
     </div>

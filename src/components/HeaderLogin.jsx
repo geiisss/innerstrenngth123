@@ -51,10 +51,10 @@ const Header = () => {
             <Link to="/LandingpageLogin">
             <a className="text-gray-700 hover:text-blue-500">Beranda</a>
             </Link>
-            <Link to="/PageoneLogin">
+            <Link to="/TentangkamiLogin">
             <a className="text-gray-700 hover:text-blue-500">Tentang Kami</a>
             </Link>
-            <Link to="/Konsultasi">
+            <Link to="/KonsultasiLogin">
             <a className="text-gray-700 hover:text-blue-500">Konsultasi</a>
             </Link>
             <Link to="/KomunitasLogin">
@@ -66,7 +66,7 @@ const Header = () => {
             <Link to="/Notifikasi">
             <img class="w-7 h-7" src={ppnotif} alt="Rounded avatar"></img>
             </Link>
-            <Link to="/Profile">
+            <Link to="/MyProfile">
             <img class="w-7 h-7 rounded-full" src={pplogin} alt="Rounded avatar"></img>
             </Link>
         </div>

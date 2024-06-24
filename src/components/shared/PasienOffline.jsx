@@ -130,7 +130,7 @@ function RecentOrders() {
                 <div className='p-4 flex flex-col flex-1'>
                     <Headerdash />
                     <div className='pt-4 px-4 pb-4 text-xl'>
-                        <h2>Pasien Online</h2>
+                        <h2>Pasien Offline</h2>
                     </div>
                     <div className='pt-4 px-4 pb-4 text-xl'></div>
                     <div className='bg-white px-4 pt-4 pb-4 rounded-sm border border-gray-200 flex-1'>
